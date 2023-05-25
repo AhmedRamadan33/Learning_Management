@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href=""
+    />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <h1>
+            <a class="navbar-brand" href="#">
+            <img id="imgFluid" class="img-fluid" src="https://tf.quomodosoft.com/bisy/wp-content/uploads/2021/03/dark_logo.svg" alt="BisyLMS">
+            </a>
+            <img id="stickyLogo" class="sticky-logo" src="https://tf.quomodosoft.com/bisy/wp-content/uploads/2021/03/white_logo.svg" alt="BisyLMS">
+          </h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item mainMenu">
+                <a class="nav-link" href="#">Courses</a>
+                <div class="menu">
+                  <a href="#">Courses Layout1</a>
+                  <a href="#">Courses Layout2</a>
+                  <a href="#">Courses Layout3</a>
+                </div>
+              </li>
+              <li class="nav-item mainMenu">
+                <a class="nav-link" href="#">Blog</a>
+                <div class="menu">
+                  <a href="#">Blog</a>
+                  <a href="#">Single Post</a>
+                </div>
+              </li>
+              <li class="nav-item mainMenu">
+                <a class="nav-link" href="#">pages</a>
+                <div class="menu">
+                  <a href="#">Blog</a>
+                  <a href="#">Blog Details</a>
+                  <a href="#">Element</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="icon">
+              <span><i class="fa-solid fa-user"></i></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- /////////////////////// -->
+    <span class="back-to-top up d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></span>
+
+    <!-- /////////////////////////// -->
+    <section class="contact_page">
+     <div class="container">
+      <div class="contact_info  mb-5 ">
+        <h2>Contact Us</h2>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb ">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Contact Us</a></li>
+          </ol>
+        </nav>
+      </div>
+     </div>
+    </section>
+    <!-- //////////////////////////// -->
+    <section class="contact p-70 ">
+   
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7290574.331619818!2d26.379632898861704!3d26.844699062075208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgypt!5e0!3m2!1sen!2seg!4v1662078064148!5m2!1sen!2seg"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h3 class="contact-title">Get in Touch</h3>
+          </div>
+          <div class="col-lg-8">
+            <form
+              class="form-contact contact_form"
+              action="contact_process.php"
+              method="post"
+              id="contactForm"
+              novalidate="novalidate"
+            >
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea
+                      class="form-control w-100"
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="9"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Enter Message'"
+                      placeholder=" Enter Message"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input
+                      class="form-control valid"
+                      name="name"
+                      id="name"
+                      type="text"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Enter your name'"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input
+                      class="form-control valid"
+                      name="email"
+                      id="email"
+                      type="email"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Enter email address'"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      name="subject"
+                      id="subject"
+                      type="text"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Enter Subject'"
+                      placeholder="Enter Subject"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <button
+                  type="submit"
+                  class="button button-contactForm boxed-btn">Send</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-3 offset-lg-1">
+            <div class="media contact-info">
+              <span><i class="fa-solid fa-house"></i></span>
+              <div class="media-body">
+                <h4>Buttonwood, California.</h4>
+                <p>Rosemead, CA 91770</p>
+              </div>
+            </div>
+            <div class="media contact-info">
+              <span><i class="fa-solid fa-tablet"></i></span>
+              <div class="media-body">
+                <h4>+1 253 565 2365</h4>
+                <p>Mon to Fri 9am to 6pm</p>
+              </div>
+            </div>
+            <div class="media contact-info">
+              <span><i class="fa-solid fa-envelope"></i></i></span>
+              <div class="media-body">
+                <h4>support@colorlib.com</h4>
+                <p>Send us your query anytime!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ////////////////////// -->
+    <footer class="footer-1 footer-area with-top-bar with-widget pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div
+              class="widget footer-1-widget about-widget">
+              <a href="https://tf.quomodosoft.com/bisy/"
+                ><img
+                  src=" https://tf.quomodosoft.com/bisy/wp-content/uploads/2021/03/dark_logo-1.svg "
+                  alt="BisyLMS"
+              /></a>
+              <p>Lost the plot Richard you mug cup of tea knackered boot bender.</p>
+              <div class="ab-social">
+                <a class="fac" href="#"><i class="fab fa-facebook"></i></a>
+                <a class="twi" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="you" href="#"><i class="fab fa-youtube"></i></a>
+                <a class="lin" href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div id="nav_menu-2" class="widget footer-2-widget widget_nav_menu">
+              <h3 class="widget-title">Explore.</h3>
+              <div class="menu-footer-menu-1-container">
+                <ul id="menu-footer-menu-1" class="menu">
+                  <li
+                    id="menu-item-355"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/about-us/"> <i class="fa-solid fa-arrow-right"></i>About Us</a>
+                  </li>
+                  <li
+                    id="menu-item-356"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-356"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/blog/"
+                      > <i class="fa-solid fa-arrow-right"></i>Success Story</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-357"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/become-a-teacher/"
+                      > <i class="fa-solid fa-arrow-right"></i>Careers</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-354"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/testimonial-page/"
+                      > <i class="fa-solid fa-arrow-right"></i>Resource Center</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-358"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/courses/"> <i class="fa-solid fa-arrow-right"></i>Courses</a>
+                  </li>
+                  <li
+                    id="menu-item-353"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/contact/"
+                      > <i class="fa-solid fa-arrow-right"></i>Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div id="nav_menu-3" class="widget footer-3-widget widget_nav_menu">
+              <h3 class="widget-title">Categories.</h3>
+              <div class="menu-footer-menu-2-container">
+                <ul id="menu-footer-menu-2" class="menu">
+                  <li
+                    id="menu-item-360"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/courses/"> <i class="fa-solid fa-arrow-right"></i>Courses</a>
+                  </li>
+                  <li
+                    id="menu-item-361"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-course_category menu-item-361"
+                  >
+                    <a
+                      href="https://tf.quomodosoft.com/bisy/course-category/computer-programing/"
+                      > <i class="fa-solid fa-arrow-right"></i>Computer Programing</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-362"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-course_category menu-item-362"
+                  >
+                    <a
+                      href="https://tf.quomodosoft.com/bisy/course-category/computer-science/"
+                      > <i class="fa-solid fa-arrow-right"></i>Computer Science</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-363"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-course_category menu-item-363"
+                  >
+                    <a
+                      href="https://tf.quomodosoft.com/bisy/course-category/data-analysis/"
+                      ><i class="fa-solid fa-arrow-right"></i>Data Analysis</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-364"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-course_category menu-item-364"
+                  >
+                    <a
+                      href="https://tf.quomodosoft.com/bisy/course-category/graphic-design/"
+                      ><i class="fa-solid fa-arrow-right"></i>Graphic Design</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-365"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-course_category menu-item-365"
+                  >
+                    <a
+                      href="https://tf.quomodosoft.com/bisy/course-category/social-sciences/"
+                      ><i class="fa-solid fa-arrow-right"></i>Social Sciences</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+            <div id="nav_menu-5" class="widget footer-4-widget widget_nav_menu">
+              <h3 class="widget-title">Support.</h3>
+              <div class="menu-footer-menu-3-container">
+                <ul id="menu-footer-menu-3" class="menu">
+                  <li
+                    id="menu-item-366"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-366"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/contact/"
+                      ><i class="fa-solid fa-arrow-right"></i>Help Center</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-370"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/courses/"
+                      ><i class="fa-solid fa-arrow-right"></i>Recent Courses</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-367"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-367"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/testimonial-page/"
+                      ><i class="fa-solid fa-arrow-right"></i>Best Services</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-371"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-371"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/about-us/"
+                      ><i class="fa-solid fa-arrow-right"></i>Our Story</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-368"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-368"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/about-us/"
+                      ><i class="fa-solid fa-arrow-right"></i>Privacy Policy</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-369"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-369"
+                  >
+                    <a href="https://tf.quomodosoft.com/bisy/blog/"
+                      ><i class="fa-solid fa-arrow-right"></i>Upcoming News</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="copyright with-widget">
+              <p>Copryright © QuomodoTheme All Right Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- /////////////////////////////////////////// -->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
